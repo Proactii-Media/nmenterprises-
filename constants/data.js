@@ -331,7 +331,7 @@ const products = [
     },
     {
         title: "Filter for Return Line Putz(Small)",
-        image: "/nmenterpriseimages/products/Filter_Return.png",
+        image: "/nmenterpriseimages/products/filter_return.png",
         alt: "Filter for Return Line Putz(Small)",
         description: "Small return line filter for Putzmeister hydraulic systems."
     },
