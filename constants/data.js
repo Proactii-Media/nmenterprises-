@@ -446,25 +446,27 @@ const homeBanners = [
         preTitle: "RMC & Concrete Equipment Solutions",
         title: "Reliable Solutions For",
         titleLine: "RMC & Concrete Equipment",
-        buttonText: "More About N.M. Enterprises",
+        buttonText: "About N.M. Enterprises",
         buttonLink: "/about",
-        buttonDataText: "More About N.M. Enterprises",
+        buttonDataText: "About N.M. Enterprises",
         backgroundClass: "industry-bg-3"
     },
+
     {
         background: "/nmenterpriseimages/banner/homeslider1.png",
         preTitle: "Concrete Equipment & Rental Services",
         title: "Concrete Pumps & Transit Mixers",
         titleLine: "For Your Project Requirements",
-        buttonText: "Explore Services",
+        buttonText: "Explore Our Services",
         buttonLink: "/services",
-        buttonDataText: "Explore Services",
+        buttonDataText: "Explore Our Services",
         backgroundClass: "industry-bg-2"
     },
+
     {
         background: "/nmenterpriseimages/banner/homeslider2.png",
         preTitle: "Spare Parts & Technical Support",
-        title: "Quality Spare Parts With",
+        title: "Quality Spare Parts &",
         titleLine: "Reliable Technical Support",
         buttonText: "Contact Us",
         buttonLink: "/contact",
