@@ -1,10 +1,11 @@
 
-const { applications } = require("../../constants/data");
+const { applications,counters  } = require("../../constants/data");
 
 const getAllAbout = async (req, res) => {
 
 try {
     res.render("about", {
+      counters ,
       applications,
     });
   } catch (error) {

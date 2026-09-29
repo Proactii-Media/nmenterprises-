@@ -409,6 +409,69 @@ const products = [
     }
 ];
 
+const counters = [
+    {
+        icon: "/nmenterpriseimages/about/icon/calendar.png",
+        value: 2015,
+        suffix: "",
+        label: "Established",
+        alt: "Established"
+    },
+    {
+        icon: "/nmenterpriseimages/about/icon/gear.png",
+        value: 6,
+        suffix: "+",
+        label: "Core Services",
+        alt: "Core Services"
+    },
+    {
+        icon: "/nmenterpriseimages/about/icon/helmet.png",
+        value: 6,
+        suffix: "+",
+        label: "Equipment Range",
+        alt: "Equipment Categories"
+    },
+    {
+        icon: "/nmenterpriseimages/about/icon/loyalty-program.png",
+        value: 4,
+        suffix: "+",
+        label: "Equipment Brands",
+        alt: "Equipment Brands"
+    }
+];
+
+const homeBanners = [
+    {
+        background: "/nmenterpriseimages/banner/homeslider3.png",
+        preTitle: "RMC & Concrete Equipment Solutions",
+        title: "Reliable Solutions For",
+        titleLine: "RMC & Concrete Equipment",
+        buttonText: "More About N.M. Enterprises",
+        buttonLink: "/about",
+        buttonDataText: "More About N.M. Enterprises",
+        backgroundClass: "industry-bg-3"
+    },
+    {
+        background: "/nmenterpriseimages/banner/homeslider1.png",
+        preTitle: "Concrete Equipment & Rental Services",
+        title: "Concrete Pumps & Transit Mixers",
+        titleLine: "For Your Project Requirements",
+        buttonText: "Explore Services",
+        buttonLink: "/services",
+        buttonDataText: "Explore Services",
+        backgroundClass: "industry-bg-2"
+    },
+    {
+        background: "/nmenterpriseimages/banner/homeslider2.png",
+        preTitle: "Spare Parts & Technical Support",
+        title: "Quality Spare Parts With",
+        titleLine: "Reliable Technical Support",
+        buttonText: "Contact Us",
+        buttonLink: "/contact",
+        buttonDataText: "Contact Us",
+        backgroundClass: "industry-bg-1"
+    }
+];
 
 
 
@@ -429,4 +492,5 @@ const products = [
 
 
 
-module.exports = {  products, services};
+
+module.exports = {  products, services,counters,homeBanners};

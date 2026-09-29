@@ -109,17 +109,7 @@
         z-index: 1;
     }
 
-    .banner-five-main-wrapper.industry-bg-2 {
-        background-image: url(/nmenterpriseimages/banner/homeslider1.png);
-    }
-
-    .banner-five-main-wrapper.industry-bg-1 {
-        background-image: url(/nmenterpriseimages/banner/homeslider2.png);
-    }
-
-    .banner-five-main-wrapper.industry-bg-3 {
-        background-image: url(/nmenterpriseimages/banner/homeslider3.png);
-    }
+ 
 </style>
 
 
@@ -147,98 +137,73 @@
             <!-- Banner Area Start -->
             <section class="tmp-banner-slider-area banner-nine banner-wind-energy">
                 <div class="swiper thumbBannerSlide-wind">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="banner-five-main-wrapper industry-banner-before bg-style industry-bg-3">
-                                <div class="container-3">
-                                    <div class="row">
-                                        <div class="col-xl-12">
-                                            <div class="banner-three-wrapper md-sm-controler">
-                                                <span class="b_one-pre cw">
-                                                    RMC & Concrete Equipment Solutions
-                                                </span>
+              <div class="swiper-wrapper">
 
-                                                <h1 class="title-banner cw">
-                                                    Reliable Solutions For <br> RMC & Concrete Equipment
-                                                </h1>
-                                                <!-- <p class="desc cw">Solar panels produce clean energy that emits no greenhouse gases or pollutants. This means cleaner air and a healthier environment.</p> -->
-                                                <div class="button-area-banner">
-                                                    <a href="/contact" class="tmp-btn btn-primary button-flip">
-                                                        <span data-text="More About ConstX">More About ConstX</span>
-                                                    </a>
-                                                </div>
+    <% homeBanners.forEach((banner) => { %>
 
+        <div class="swiper-slide">
 
+            <div
+                class="banner-five-main-wrapper industry-banner-before bg-style <%= banner.backgroundClass %>"
+                style="background-image: url('<%= banner.background %>');"
+            >
 
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- <div class="banner-shape">
-                                    <img src="/images/banner/bg-shape-03.svg" alt="">
-                                    <img src="/images/banner/bg-shape-04.svg" alt="">
-                                </div> -->
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="banner-five-main-wrapper industry-banner-before bg-style industry-bg-2">
-                                <div class="container-3">
-                                    <div class="row">
-                                        <div class="col-xl-12">
-                                            <div class="banner-three-wrapper md-sm-controler">
-                                                <span class="b_one-pre cw">
-                                                    Concrete Equipment & Rental Services
-                                                </span>
+                <div class="container-3">
 
-                                                <h1 class="title-banner cw">
-                                                    Concrete Pumps & Transit Mixers <br> For Your Project Requirements
-                                                </h1>
-                                                <!-- <p class="desc cw">Solar panels produce clean energy that emits no greenhouse gases or pollutants. This means cleaner air and a healthier environment.</p> -->
-                                                <div class="button-area-banner">
-                                                    <a href="/contact" class="tmp-btn btn-primary button-flip">
-                                                        <span data-text="More About ConstX">More About ConstX</span>
-                                                    </a>
-                                                </div>
+                    <div class="row">
+
+                        <div class="col-xl-12">
+
+                            <div class="banner-three-wrapper md-sm-controler">
+
+                                <span class="b_one-pre cw">
+
+                                    <%= banner.preTitle %>
+
+                                </span>
 
 
+                                <h1 class="title-banner cw">
 
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <%= banner.title %>
+                                    <br>
+                                    <%= banner.titleLine %>
+
+                                </h1>
+
+
+                                <div class="button-area-banner">
+
+                                    <a
+                                        href="<%= banner.buttonLink %>"
+                                        class="tmp-btn btn-primary button-flip"
+                                    >
+
+                                        <span
+                                            data-text="<%= banner.buttonDataText %>"
+                                        >
+                                            <%= banner.buttonText %>
+                                        </span>
+
+                                    </a>
+
                                 </div>
 
                             </div>
+
                         </div>
-                        <div class="swiper-slide">
-                            <div class="banner-five-main-wrapper industry-banner-before bg-style industry-bg-1">
-                                <div class="container-3">
-                                    <div class="row">
-                                        <div class="col-xl-12">
-                                            <div class="banner-three-wrapper md-sm-controler">
-                                                <span class="b_one-pre cw">
-                                                    Spare Parts & Technical Support
-                                                </span>
 
-                                                <h1 class="title-banner cw">
-                                                    Quality Spare Parts With <br> Reliable Technical Support
-                                                </h1>
-                                                <!-- <p class="desc cw">Solar panels produce clean energy that emits no greenhouse gases or pollutants. This means cleaner air and a healthier environment.</p> -->
-                                                <div class="button-area-banner">
-                                                    <a href="/contact" class="tmp-btn btn-primary button-flip">
-                                                        <span data-text="Contact Us">Contact Us</span>
-                                                    </a>
-                                                </div>
-
-
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
                     </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    <% }) %>
+
+</div>
 
                 </div>
 
@@ -275,72 +240,41 @@
 
                     <div class="counter-inner">
 
-                        <div class="content" data-sal="slide-right" data-sal-duration="1000" data-sal-delay="200">
+                        <% counters.forEach((counter, index)=> { %>
 
-                            <div class="icon">
-                                <img src="/nmenterpriseimages/about/icon/calendar.png" alt="Established">
+                            <div class="content"
+                                data-sal="<%= index === 0 ? 'slide-right' : index === counters.length - 1 ? 'slide-left' : 'slide-up' %>"
+                                data-sal-duration="1000" data-sal-delay="<%= (index + 1) * 200 %>">
+
+                                <div class="icon">
+
+                                    <img src="<%= counter.icon %>" alt="<%= counter.alt %>">
+
+                                </div>
+
+
+                                <h3 class="title">
+
+                                    <span class="counter">
+
+                                        <span class="odometer" data-count="<%= counter.value %>">
+                                            00
+                                        </span>
+
+                                    </span>
+
+                                    <%= counter.suffix %>
+
+                                </h3>
+
+
+                                <p>
+                                    <%= counter.label %>
+                                </p>
+
                             </div>
 
-                            <h3 class="title">
-                                <span class="counter">
-                                    <span class="odometer" data-count="2015">00</span>
-                                </span>
-                            </h3>
-
-                            <p>Established</p>
-
-                        </div>
-
-
-                        <div class="content" data-sal="slide-up" data-sal-duration="1000" data-sal-delay="200">
-
-                            <div class="icon">
-                                <img src="/nmenterpriseimages/about/icon/gear.png" alt="Core Services">
-                            </div>
-
-                            <h3 class="title">
-                                <span class="counter">
-                                    <span class="odometer" data-count="6">00</span>
-                                </span>+
-                            </h3>
-
-                            <p>Core Services</p>
-
-                        </div>
-
-
-                        <div class="content" data-sal="slide-up" data-sal-duration="1000" data-sal-delay="400">
-
-                            <div class="icon">
-                                <img src="/nmenterpriseimages/about/icon/helmet.png" alt="Equipment Categories">
-                            </div>
-
-                            <h3 class="title">
-                                <span class="counter">
-                                    <span class="odometer" data-count="6">00</span>
-                                </span>+
-                            </h3>
-
-                            <p>Equipment Range</p>
-
-                        </div>
-
-
-                        <div class="content" data-sal="slide-left" data-sal-duration="1000" data-sal-delay="600">
-
-                            <div class="icon">
-                                <img src="/nmenterpriseimages/about/icon/loyalty-program.png" alt="Equipment Brands">
-                            </div>
-
-                            <h3 class="title">
-                                <span class="counter">
-                                    <span class="odometer" data-count="4">00</span>
-                                </span>+
-                            </h3>
-
-                            <p>Equipment Brands</p>
-
-                        </div>
+                            <% }) %>
 
                     </div>
                 </div>
@@ -488,7 +422,7 @@
                                             <%= service.description %>
                                         </p>
 
-                            
+
 
                                     </div>
 
@@ -749,7 +683,7 @@
 
                                                 <div class="service-wrapper-3">
 
-                                                    <div class="top-content text-center">
+                                                    <div class="top-content text-center" style="background-color: #ED1E25; color: #fff !important;">
                                                         <h3 class="projecttitle">
                                                             <%= product.title %>
                                                         </h3>
@@ -844,175 +778,148 @@
             </style>
 
             <!-- Contact Area Start -->
-       <section class="tmp-contact-area tmp-section-gapBottom pt--60 pt_sm--0">
-    <div class="container-3">
-        <div class="section-inner">
-            <div class="row g-5">
+            <section class="tmp-contact-area tmp-section-gapBottom pt--60 pt_sm--0">
+                <div class="container-3">
+                    <div class="section-inner">
+                        <div class="row g-5">
 
-                <div class="col-lg-6"
-                    data-sal="slide-right"
-                    data-sal-duration="800"
-                    data-sal-delay="000">
+                            <div class="col-lg-6" data-sal="slide-right" data-sal-duration="800" data-sal-delay="000">
 
-                    <img class="contactus"
-                        src="/nmenterpriseimages/contact.png"
-                        alt="Contact Us">
-                </div>
-
-                <div class="col-lg-6"
-                    data-sal="slide-left"
-                    data-sal-duration="800"
-                    data-sal-delay="200">
-
-                    <div class="contact-form-area">
-
-                        <form id="contactForm" action="/contact" method="POST">
-
-                            <h4 class="title">Contact With Us</h4>
-
-                            <div class="form-inner">
-
-                                <!-- Row 1: Name + Email -->
-                                <div class="row">
-
-                                    <div class="col-md-6 p-2">
-                                        <div class="single-wrapper">
-                                            <label for="name">
-                                                <i class="fa-regular fa-user"
-                                                    style="color: #a80018;"></i>
-                                                Your Name
-                                            </label>
-
-                                            <input type="text"
-                                                id="name"
-                                                name="dzName"
-                                                required>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6 p-2">
-                                        <div class="single-wrapper">
-                                            <label for="email">
-                                                <i class="fa-regular fa-envelope"
-                                                    style="color: #a80018;"></i>
-                                                Your Email
-                                            </label>
-
-                                            <input type="email"
-                                                id="email"
-                                                name="dzEmail"
-                                                required>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-
-                                <!-- Row 2: Phone + Subject -->
-                                <div class="row">
-
-                                    <div class="col-md-6 p-2">
-                                        <div class="single-wrapper">
-                                            <label for="phone">
-                                                <i class="fa-solid fa-phone"
-                                                    style="color: #a80018;"></i>
-                                                Your Phone
-                                            </label>
-
-                                            <input type="tel"
-                                                id="phone"
-                                                name="dzOther[Phone]"
-                                                maxlength="10"
-                                                pattern="[0-9]{10}"
-                                                required>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6 p-2">
-                                        <div class="single-wrapper">
-                                            <label for="subject">
-                                                <i class="fa-regular fa-pen-to-square"
-                                                    style="color: #a80018;"></i>
-                                                Subject
-                                            </label>
-
-                                            <input type="text"
-                                                id="subject"
-                                                name="dzOther[Subject]"
-                                                required>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-
-                                <!-- Row 3: Message -->
-                                <div class="row">
-
-                                    <div class="col-12 p-2">
-                                        <div class="single-wrapper">
-
-                                            <label for="message">
-                                                <i class="fa-regular fa-message"
-                                                    style="color: #a80018;"></i>
-                                                Your Message
-                                            </label>
-
-                                            <textarea
-                                                name="dzMessage"
-                                                id="message"
-                                                required></textarea>
-
-                                        </div>
-                                    </div>
-
-                                </div>
-
-
-                                <!-- Success/Error Message -->
-                                <div id="formSuccessMsg"
-                                    style="display:none; margin:10px 0; padding:12px; border-radius:5px;">
-                                </div>
-
-
-                                <!-- Row 4: Button -->
-                                <div class="single-wrapper">
-
-                                    <button
-                                        id="submitBtn"
-                                        class="tmp-btn btn-primary hover-icon-reverse w-100"
-                                        type="submit">
-
-                                        <span class="icon-reverse-wrapper">
-
-                                            <span class="btn-text">
-                                                Send Your Message
-                                            </span>
-
-                                            <span class="btn-icon">
-                                                <i class="fa-solid fa-arrow-right"></i>
-                                            </span>
-
-                                            <span class="btn-icon">
-                                                <i class="fa-solid fa-arrow-right"></i>
-                                            </span>
-
-                                        </span>
-
-                                    </button>
-
-                                </div>
-
+                                <img class="contactus" src="/nmenterpriseimages/contact.png" alt="Contact Us">
                             </div>
-                        </form>
 
+                            <div class="col-lg-6" data-sal="slide-left" data-sal-duration="800" data-sal-delay="200">
+
+                                <div class="contact-form-area">
+
+                                    <form id="contactForm" action="/contact" method="POST">
+
+                                        <h4 class="title">Contact With Us</h4>
+
+                                        <div class="form-inner">
+
+                                            <!-- Row 1: Name + Email -->
+                                            <div class="row">
+
+                                                <div class="col-md-6 p-2">
+                                                    <div class="single-wrapper">
+                                                        <label for="name">
+                                                            <i class="fa-regular fa-user" style="color: #a80018;"></i>
+                                                            Your Name
+                                                        </label>
+
+                                                        <input type="text" id="name" name="dzName" required>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-6 p-2">
+                                                    <div class="single-wrapper">
+                                                        <label for="email">
+                                                            <i class="fa-regular fa-envelope"
+                                                                style="color: #a80018;"></i>
+                                                            Your Email
+                                                        </label>
+
+                                                        <input type="email" id="email" name="dzEmail" required>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+
+                                            <!-- Row 2: Phone + Subject -->
+                                            <div class="row">
+
+                                                <div class="col-md-6 p-2">
+                                                    <div class="single-wrapper">
+                                                        <label for="phone">
+                                                            <i class="fa-solid fa-phone" style="color: #a80018;"></i>
+                                                            Your Phone
+                                                        </label>
+
+                                                        <input type="tel" id="phone" name="dzOther[Phone]"
+                                                            maxlength="10" pattern="[0-9]{10}" required>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-6 p-2">
+                                                    <div class="single-wrapper">
+                                                        <label for="subject">
+                                                            <i class="fa-regular fa-pen-to-square"
+                                                                style="color: #a80018;"></i>
+                                                            Subject
+                                                        </label>
+
+                                                        <input type="text" id="subject" name="dzOther[Subject]"
+                                                            required>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+
+                                            <!-- Row 3: Message -->
+                                            <div class="row">
+
+                                                <div class="col-12 p-2">
+                                                    <div class="single-wrapper">
+
+                                                        <label for="message">
+                                                            <i class="fa-regular fa-message"
+                                                                style="color: #a80018;"></i>
+                                                            Your Message
+                                                        </label>
+
+                                                        <textarea name="dzMessage" id="message" required></textarea>
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+
+                                            <!-- Success/Error Message -->
+                                            <div id="formSuccessMsg"
+                                                style="display:none; margin:10px 0; padding:12px; border-radius:5px;">
+                                            </div>
+
+
+                                            <!-- Row 4: Button -->
+                                            <div class="single-wrapper">
+
+                                                <button id="submitBtn"
+                                                    class="tmp-btn btn-primary hover-icon-reverse w-100" type="submit">
+
+                                                    <span class="icon-reverse-wrapper">
+
+                                                        <span class="btn-text">
+                                                            Send Your Message
+                                                        </span>
+
+                                                        <span class="btn-icon">
+                                                            <i class="fa-solid fa-arrow-right"></i>
+                                                        </span>
+
+                                                        <span class="btn-icon">
+                                                            <i class="fa-solid fa-arrow-right"></i>
+                                                        </span>
+
+                                                    </span>
+
+                                                </button>
+
+                                            </div>
+
+                                        </div>
+                                    </form>
+
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
-
-            </div>
-        </div>
-    </div>
-</section>
+            </section>
             <!-- Contact Area End -->
 
 

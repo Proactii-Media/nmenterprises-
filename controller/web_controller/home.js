@@ -1,11 +1,12 @@
 
-const { services,products } = require("../../constants/data");
+const { services,products,counters,homeBanners } = require("../../constants/data");
 
 
 const getAllHome = async (req, res) => {
   try {
     res.render("home", {
-      
+      homeBanners,
+      counters,
       services,
       products,
     });

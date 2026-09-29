@@ -99,62 +99,45 @@
                 <div class="image-area tmp-section-gap ">
 
                 </div>
-                <div class="counter-inner">
+                   <div class="counter-inner">
 
-                    <div class="content" data-sal="slide-right" data-sal-duration="1000" data-sal-delay="200">
+                        <% counters.forEach((counter, index)=> { %>
 
-                        <div class="icon">
-                            <img src="/nmenterpriseimages/about/icon/calendar.png" alt="Established">
-                        </div>
+                            <div class="content"
+                                data-sal="<%= index === 0 ? 'slide-right' : index === counters.length - 1 ? 'slide-left' : 'slide-up' %>"
+                                data-sal-duration="1000" data-sal-delay="<%= (index + 1) * 200 %>">
 
-                        <h3 class="title">
-                            <span class="counter">
-                                <span class="odometer" data-count="2015">00</span>
-                            </span>
-                        </h3>
+                                <div class="icon">
 
-                        <p>Established</p>
+                                    <img src="<%= counter.icon %>" alt="<%= counter.alt %>">
+
+                                </div>
+
+
+                                <h3 class="title">
+
+                                    <span class="counter">
+
+                                        <span class="odometer" data-count="<%= counter.value %>">
+                                            00
+                                        </span>
+
+                                    </span>
+
+                                    <%= counter.suffix %>
+
+                                </h3>
+
+
+                                <p>
+                                    <%= counter.label %>
+                                </p>
+
+                            </div>
+
+                            <% }) %>
 
                     </div>
-
-
-                    <div class="content" data-sal="slide-up" data-sal-duration="1000" data-sal-delay="200">
-                        <div class="icon">
-                            <img src="/nmenterpriseimages/about/icon/gear.png" alt="Core Services">
-                        </div>
-                        <h3 class="title">
-                            <span class="counter">
-                                <span class="odometer" data-count="6">00</span>
-                            </span>+
-                        </h3>
-                        <p>Core Services</p>
-                    </div>
-                    <div class="content" data-sal="slide-up" data-sal-duration="1000" data-sal-delay="400">
-
-                        <div class="icon">
-                            <img src="/nmenterpriseimages/about/icon/helmet.png" alt="Equipment Categories">
-                        </div>
-
-                        <h3 class="title">
-                            <span class="counter">
-                                <span class="odometer" data-count="6">00</span>
-                            </span>+
-                        </h3>
-
-                        <p>Equipment Range</p>
-                    </div>
-                    <div class="content" data-sal="slide-left" data-sal-duration="1000" data-sal-delay="600">
-                        <div class="icon">
-                            <img src="/nmenterpriseimages/about/icon/loyalty-program.png" alt="Equipment Brands">
-                        </div>
-                        <h3 class="title">
-                            <span class="counter">
-                                <span class="odometer" data-count="4">00</span>
-                            </span>+
-                        </h3>
-                        <p>Equipment Brands</p>
-                    </div>
-                </div>
             </div>
             <!-- Counter Area End -->
         </section>
