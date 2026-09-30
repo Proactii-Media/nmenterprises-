@@ -56629,9 +56629,13 @@ ul.mega-menu-item.parent-nav {
 }
 
 .logo-content {
-  padding: 2% 4% 2% 2%;
+  padding: 2% 7% 2% 2%;
   display: inline-flex;
   align-items: center;
   background: #fff;
   width: fit-content;
+}
+
+.logo-content {
+  gap: 2%;
 }
