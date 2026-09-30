@@ -23814,7 +23814,7 @@ edit .quantity-edit button {
 
 @media only screen and (max-width: 1199px) {
   .tmp-about-area {
-    padding-bottom: 120px !important;
+    padding-bottom: 1px !important;
   }
 }
 
@@ -56638,4 +56638,10 @@ ul.mega-menu-item.parent-nav {
 
 .logo-content {
   gap: 2%;
+}
+
+@media (max-width: 769px) {
+    .image-area.tmp-section-gap.about {
+        padding: 0 !important;
+    }
 }

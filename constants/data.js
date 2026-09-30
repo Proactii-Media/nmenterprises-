@@ -52,7 +52,6 @@ const services = [
 ];
 
 const products = [
-    // --- Category 1: RMC Batching Plant Parts ---
     {
         title: "Load Cell 1000 Kg S Type 2 Mv",
         image: "/nmenterpriseimages/products/s-type-load-cell-1000-kg.jpg",
@@ -474,25 +473,5 @@ const homeBanners = [
         backgroundClass: "industry-bg-1"
     }
 ];
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 module.exports = {  products, services,counters,homeBanners};
