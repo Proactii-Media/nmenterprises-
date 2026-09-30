@@ -11,19 +11,19 @@ const services = [
     },
 
     {
-        title: "Concrete Pumps & Boom Pumps",
-        icon: "/nmenterpriseimages/service/icon/concrete-pump.png",
-        alt: "Concrete Pumps and Boom Pumps",
+        title: "Manpower Services",
+        icon: "/nmenterpriseimages/service/icon/manpower.png",
+        alt: "Manpower Services",
         description:
-            "Sales, service and support for concrete pumps and boom pump equipment."
+            "Skilled manpower including supervisors, technicians, operators and helpers for RMC and concrete work."
     },
 
     {
-        title: "Transit Mixers",
-        icon: "/nmenterpriseimages/service/icon/cement-truck.png",
-        alt: "Transit Mixers",
+        title: "Sales & Services",
+        icon: "/nmenterpriseimages/service/icon/concrete-pump.png",
+        alt: "Sales and Services",
         description:
-            "Sales, service and support for transit mixers and related components."
+            "Sales, maintenance and repair services for RMC and concrete equipment, including mixer machines, concrete pumps, home pumps, spare parts and related accessories."
     },
 
     {
@@ -42,14 +42,15 @@ const services = [
             "Maintenance, repair and technical support for RMC and concrete equipment."
     },
 
-    {
-        title: "RMC Equipment & Spare Parts",
-        icon: "/nmenterpriseimages/service/icon/settings.png",
-        alt: "RMC Equipment Spare Parts",
-        description:
-            "Sales and service of spare parts for RMC batching plants and concrete equipment."
-    }
+    // {
+    //     title: "RMC Equipment & Spare Parts",
+    //     icon: "/nmenterpriseimages/service/icon/settings.png",
+    //     alt: "RMC Equipment Spare Parts",
+    //     description:
+    //         "Spare parts and accessories for RMC batching plants, concrete pumps, transit mixers and related equipment."
+    // }
 ];
+
 
 const products = [
     {
@@ -418,26 +419,26 @@ const counters = [
     },
     {
         icon: "/nmenterpriseimages/about/icon/gear.png",
-        value: 6,
+        value: 5,
         suffix: "+",
         label: "Core Services",
         alt: "Core Services"
     },
     {
         icon: "/nmenterpriseimages/about/icon/helmet.png",
-        value: 6,
+        value: 30,
         suffix: "+",
         label: "Equipment Range",
         alt: "Equipment Categories"
     },
     {
-        icon: "/nmenterpriseimages/about/icon/loyalty-program.png",
-        value: 4,
+        icon: "/nmenterpriseimages/about/icon/manpower.png",
+        value: 10,
         suffix: "+",
-        label: "Equipment Brands",
-        alt: "Equipment Brands"
+        label: "Manpower & Machinery",
+        alt: "Manpower & Machinery"
     }
-];
+];;
 
 const homeBanners = [
     {
