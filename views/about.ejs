@@ -1,11 +1,4 @@
 <%- include('include/head') %>
-
-<style>
-
-</style>
-
-
-
     <%- include('include/header') %>
         <!-- tmp breadcrumba area start -->
         <div class="tmp-bread-crumb-area bg-breadcrumb bg-image-breadcrumb bg_image">
@@ -96,14 +89,13 @@
         </section>
         <!-- About Area End -->
 
-
         <section class="tmp-about-area area-2 pb--80">
             <!-- Counter Area Start -->
             <div class="tmp-counter-area area-2 corevalue">
                 <div class="image-area tmp-section-gap about">
 
-                </div>
-                   <div class="counter-inner">
+
+                    <div class="counter-inner">
 
                         <% counters.forEach((counter, index)=> { %>
 
@@ -142,27 +134,21 @@
                             <% }) %>
 
                     </div>
+                </div>
             </div>
             <!-- Counter Area End -->
         </section>
-
-
 
         <!-- =====================================================
      MISSION & VISION
 ====================================================== -->
 
-        <section class="mission-vision-section py-5 py-lg-6">
-            <div class="container py-4 py-lg-5">
+        <section class="mission-vision-section tmp-section-gap">
+            <div class="container ">
                 <div class="row justify-content-center">
 
                     <div class="col-lg-8 text-center mb-5">
-
-                        <div class="mv-subtitle mb-2">
-                            What Drives Us
-                        </div>
-
-                        <h2 class="mv-title-main mb-3">
+                        <h2 class="mv-title-main mb-4">
                             Mission <span>&amp;</span> Vision
                         </h2>
 
@@ -171,15 +157,12 @@
                             Our mission is to provide reliable RMC and concrete equipment solutions with quality
                             products and services. Our vision is to build long-term customer relationships through
                             dependable support and continuous improvement.
-
                         </p>
-
                     </div>
-
                 </div>
                 <div class="mv-wrapper position-relative">
                     <div class="row g-4">
-                        <div class="col-12 col-lg-6">
+                        <div class="col-12 col-lg-6 ">
                             <div class="mv-card h-100">
                                 <div class="mv-card-bar mission-bar"></div>
                                 <div class="mv-number">
@@ -219,17 +202,13 @@
 
                         </div>
 
-
-
                         <!-- =========================================
                      VISION
                 ========================================== -->
 
                         <div class="col-12 col-lg-6">
-
                             <div class="mv-card h-100">
                                 <div class="mv-card-bar vision-bar"></div>
-
 
                                 <div class="mv-number">
                                     02
@@ -268,4 +247,4 @@
         </section>
 
         <%- include('include/footer') %>
-            <%- include('include/mobileHeader') %>
+      <%- include('include/mobileHeader') %>

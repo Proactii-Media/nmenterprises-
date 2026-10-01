@@ -108,15 +108,10 @@
         position: relative;
         z-index: 1;
     }
-
- 
 </style>
 
 
-<!-- Mirrored from html.inversweb.com/constx/index-three.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 23 Sep 2026 06:22:52 GMT -->
 <%- include('include/head') %>
-
-
 
     <body class="home-one">
 
@@ -137,73 +132,67 @@
             <!-- Banner Area Start -->
             <section class="tmp-banner-slider-area banner-nine banner-wind-energy">
                 <div class="swiper thumbBannerSlide-wind">
-              <div class="swiper-wrapper">
+                    <div class="swiper-wrapper">
 
-    <% homeBanners.forEach((banner) => { %>
+                        <% homeBanners.forEach((banner)=> { %>
 
-        <div class="swiper-slide">
+                            <div class="swiper-slide">
 
-            <div
-                class="banner-five-main-wrapper industry-banner-before bg-style <%= banner.backgroundClass %>"
-                style="background-image: url('<%= banner.background %>');"
-            >
+                                <div class="banner-five-main-wrapper industry-banner-before bg-style <%= banner.backgroundClass %>"
+                                    style="background-image: url('<%= banner.background %>');">
 
-                <div class="container-3">
+                                    <div class="container-3">
 
-                    <div class="row">
+                                        <div class="row">
 
-                        <div class="col-xl-12">
+                                            <div class="col-xl-12">
 
-                            <div class="banner-three-wrapper md-sm-controler">
+                                                <div class="banner-three-wrapper md-sm-controler">
 
-                                <span class="b_one-pre cw">
+                                                    <span class="b_one-pre cw">
 
-                                    <%= banner.preTitle %>
+                                                        <%= banner.preTitle %>
 
-                                </span>
+                                                    </span>
 
 
-                                <h1 class="title-banner cw">
+                                                    <h1 class="title-banner cw">
 
-                                    <%= banner.title %>
-                                    <br>
-                                    <%= banner.titleLine %>
+                                                        <%= banner.title %>
+                                                            <br>
+                                                            <%= banner.titleLine %>
 
-                                </h1>
+                                                    </h1>
 
 
-                                <div class="button-area-banner">
+                                                    <div class="button-area-banner">
 
-                                    <a
-                                        href="<%= banner.buttonLink %>"
-                                        class="tmp-btn btn-primary button-flip"
-                                    >
+                                                        <a href="<%= banner.buttonLink %>"
+                                                            class="tmp-btn btn-primary button-flip">
 
-                                        <span
-                                            data-text="<%= banner.buttonDataText %>"
-                                        >
-                                            <%= banner.buttonText %>
-                                        </span>
+                                                            <span data-text="<%= banner.buttonDataText %>">
+                                                                <%= banner.buttonText %>
+                                                            </span>
 
-                                    </a>
+                                                        </a>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
 
                                 </div>
 
                             </div>
 
-                        </div>
+                            <% }) %>
 
                     </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    <% }) %>
-
-</div>
 
                 </div>
 
@@ -237,36 +226,26 @@
 
                     <div class="image-area tmp-section-gap about">
                     </div>
-
-                    <div class="counter-inner">
+                    <div class="counter-inner counter-boxes">
 
                         <% counters.forEach((counter, index)=> { %>
 
-                            <div class="content"
+                            <div class="content counter-box"
                                 data-sal="<%= index === 0 ? 'slide-right' : index === counters.length - 1 ? 'slide-left' : 'slide-up' %>"
                                 data-sal-duration="1000" data-sal-delay="<%= (index + 1) * 200 %>">
 
                                 <div class="icon">
-
                                     <img src="<%= counter.icon %>" alt="<%= counter.alt %>">
-
                                 </div>
 
-
                                 <h3 class="title">
-
                                     <span class="counter">
-
                                         <span class="odometer" data-count="<%= counter.value %>">
                                             00
                                         </span>
-
                                     </span>
-
                                     <%= counter.suffix %>
-
                                 </h3>
-
 
                                 <p>
                                     <%= counter.label %>
@@ -275,17 +254,14 @@
                             </div>
 
                             <% }) %>
-
                     </div>
                 </div>
                 <!-- Counter Area End -->
-
             </section>
-
             <!-- About Area Start -->
             <section class="tmp-about-area area-4 tmp-section-gap pb--150">
                 <div class="container-3">
-                    <div class="section-inner">
+                    <div class="section-inner about-bottom">
                         <div class="row align-items-center">
 
                             <!-- Left Content -->
@@ -627,14 +603,12 @@
 
             <!-- Products Area Start -->
             <section class="tmp-service-area area-3 tmp-section-gap">
-
                 <div class="container-3">
 
                     <!-- SECTION TITLE -->
                     <div class="section-title-area-4 d-flex justify-content-between align-items-center">
 
                         <div class="left-side-content">
-
                             <p class="sub-title cg" data-sal="slide-up-large" data-sal-duration="1000"
                                 data-sal-delay="100">
                                 OUR Products
@@ -645,7 +619,6 @@
                                 Complete RMC &<br>
                                 Concrete Equipment Solutions
                             </h2>
-
                         </div>
 
                         <div class="right-side-text" data-sal="slide-up-large" data-sal-duration="1000"
@@ -656,50 +629,30 @@
                                 rental equipment, maintenance and technical support for RMC
                                 and concrete construction operations.
                             </p>
-
                         </div>
-
                     </div>
-
-                    <style>
-
-                    </style>
-
-
                     <!-- PRODUCTS SLIDER -->
                     <div class="section-inner mt--40">
-
                         <div class="slider-inner">
-
                             <div class="float-right">
-
                                 <div class="swiper tmpServiceSlider">
-
                                     <div class="swiper-wrapper">
 
                                         <% products.forEach((product)=> { %>
-
                                             <div class="swiper-slide">
-
                                                 <div class="service-wrapper-3">
-
-                                                    <div class="top-content text-center" style="background-color: #ED1E25; color: #fff !important;">
+                                                    <div class="top-content text-center"
+                                                        style="background-color: #ED1E25; color: #fff !important;">
                                                         <h3 class="projecttitle">
                                                             <%= product.title %>
                                                         </h3>
                                                     </div>
-
                                                     <div class="image-area">
-
                                                         <a href="/products">
-
                                                             <img src="<%= product.image %>" width="531"
                                                                 alt="<%= product.alt %>">
-
                                                         </a>
-
                                                         <div class="content">
-
                                                             <a href="/products"
                                                                 class="tmp-icon-overlay-link-btn btn-bg-dark btn-xxl">
 
@@ -708,30 +661,19 @@
                                                                     <i
                                                                         class="tmp-icon-bottom fa-solid fa-arrow-right"></i>
                                                                 </span>
-
                                                             </a>
-
                                                             <p class="desc">
                                                                 <%= product.description %>
                                                             </p>
-
                                                         </div>
-
                                                     </div>
-
                                                 </div>
-
                                             </div>
 
                                             <% }); %>
-
                                     </div>
-
                                 </div>
-
                             </div>
-
-
                             <!-- SLIDER BUTTONS -->
                             <div class="slider-button">
 
@@ -741,31 +683,20 @@
 
                                         <i class="invers-icon fal fa-arrow-left"></i>
                                         <i class="invers-icon-top fal fa-arrow-left"></i>
-
                                     </div>
-
                                 </div>
-
-
                                 <div class="swiper-btn swiper-button-next">
-
                                     <div class="custom-overfolow-btn">
 
                                         <i class="invers-icon fal fa-arrow-right"></i>
                                         <i class="invers-icon-top fal fa-arrow-right"></i>
 
                                     </div>
-
                                 </div>
-
                             </div>
-
                         </div>
-
                     </div>
-
                 </div>
-
             </section>
             <!-- Products Area End -->
 
@@ -922,9 +853,5 @@
             </section>
             <!-- Contact Area End -->
 
-
-
             <%- include('include/footer') %>
-                <!-- header style two -->
-
-                <%- include('include/mobileHeader') %>
+            <%- include('include/mobileHeader') %>
