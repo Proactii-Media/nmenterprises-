@@ -64,29 +64,23 @@ const sendContactMail = async (req, res) => {
         // PHONE VALIDATION
         // ===============================
 
-        if (!/^[0-9]{10}$/.test(phone)) {
 
+        if (!/^[6-9][0-9]{9}$/.test(phone)) {
             return res.status(400).json({
                 success: false,
-                message: "Phone number must contain exactly 10 digits."
+                message: "Please enter a valid 10-digit mobile number."
             });
-
         }
-
-
         // ===============================
         // GMAIL TRANSPORTER
         // ===============================
 
         const transporter = nodemailer.createTransport({
-
             service: "gmail",
-
             auth: {
-                user: "pm7244875@gmail.com",
-                pass: "imdvvhhckyvaxkbe"
+                user: process.env.GMAIL_USER,
+                pass: process.env.GMAIL_APP_PASSWORD
             }
-
         });
 
 
@@ -95,16 +89,12 @@ const sendContactMail = async (req, res) => {
         // ===============================
 
         await transporter.sendMail({
-
-            from: "pm7244875@gmail.com",
-
-            to: "pm7244875@gmail.com",
-
+            from: process.env.GMAIL_USER,
+            to: process.env.GMAIL_USER,
             replyTo: email,
-
             subject: subject,
 
-html: `
+            html: `
 <table width="100%" cellpadding="0" cellspacing="0" border="0"
     style="
         margin:0;
