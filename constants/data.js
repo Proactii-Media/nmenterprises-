@@ -589,7 +589,427 @@ const products = [
         "image": "/nmenterpriseimages/products/p-30.png",
         "alt": "Conmat Seal Kit",
         "description": "Comprehensive seal kit for Conmat maintenance."
+    },
+
+    // 2
+
+    {
+        title: "Electric Panel",
+        image: "/nmenterpriseimages/products/p-31.png",
+        alt: "Electric Panel",
+        description: "Industrial electrical control panel for machinery operation."
+    },
+    {
+        title: "Rotor Pair",
+        image: "/nmenterpriseimages/products/p-32.png",
+        alt: "Rotor Pair",
+        description: "Twin rotor assembly for pump mechanisms."
+    },
+    {
+        title: "Injection Ring",
+        image: "/nmenterpriseimages/products/p-33.png",
+        alt: "Injection Ring",
+        description: "Heavy-duty metal ring for fluid injection systems."
+    },
+    {
+        title: "Gear Pair",
+        image: "/nmenterpriseimages/products/p-34.png",
+        alt: "Gear Pair",
+        description: "Matching set of metal gears for power transmission."
+    },
+    {
+        title: "Pressing Bush",
+        image: "/nmenterpriseimages/products/p-35.png",
+        alt: "Pressing Bush",
+        description: "Metal bushing for pressing and bearing applications."
+    },
+    {
+        title: "Bearing",
+        image: "/nmenterpriseimages/products/p-36.png",
+        alt: "Bearing",
+        description: "Sealed ball bearings for smooth rotational support."
+    },
+    {
+        title: "Distance Ring",
+        image: "/nmenterpriseimages/products/p-37.png",
+        alt: "Distance Ring",
+        description: "Spacer ring for maintaining precise component distance."
+    },
+    {
+        title: "Oil Seal",
+        image: "/nmenterpriseimages/products/p-38.png",
+        alt: "Oil Seal",
+        description: "Durable rubber seals for preventing oil leakage."
+    },
+    {
+        title: "Withdrawal Sleeve",
+        image: "/nmenterpriseimages/products/p-39.png",
+        alt: "Withdrawal Sleeve",
+        description: "Metal sleeve designed for easy mounting and dismounting of bearings."
+    },
+    {
+        title: "O Ring",
+        image: "/nmenterpriseimages/products/p-40.png",
+        alt: "O Ring",
+        description: "Standard rubber O-rings for reliable sealing."
+    },
+    {
+        title: "Prv/Nrv",
+        image: "/nmenterpriseimages/products/p-41.png",
+        alt: "Prv/Nrv",
+        description: "Pressure reducing valve and non-return valve assembly."
+    },
+    {
+        title: "Oil Level Glass",
+        image: "/nmenterpriseimages/products/p-42.png",
+        alt: "Oil Level Glass",
+        description: "Visual oil level indicator for fluid monitoring."
+    },
+    {
+        title: "Piston Ring",
+        image: "/nmenterpriseimages/products/p-43.png",
+        alt: "Piston Ring",
+        description: "Metallic rings for sealing pistons within cylinders."
+    },
+    {
+        title: "Distance Bush",
+        image: "/nmenterpriseimages/products/p-44.png",
+        alt: "Distance Bush",
+        description: "Spacer bushing for correct alignment and spacing."
+    },
+    {
+        title: "Suction Filter",
+        image: "/nmenterpriseimages/products/p-45.png",
+        alt: "Suction Filter",
+        description: "High-efficiency panel air filter for intake systems."
+    },
+
+    // 3
+    {
+        title: "Cement Screw Conveyor",
+        image: "/nmenterpriseimages/products/p-46.png",
+        alt: "Cement Screw Conveyor",
+        description: "Heavy-duty screw conveyor for efficient cement and powder transport."
+    },
+    {
+        title: "Bottom Dust Collector",
+        image: "/nmenterpriseimages/products/p-47.png",
+        alt: "Bottom Dust Collector",
+        description: "Industrial bottom dust collection unit for silo and batching systems."
+    },
+    {
+        title: "Hanger Bearing",
+        image: "/nmenterpriseimages/products/p-48.png",
+        alt: "Hanger Bearing",
+        description: "Multi-arm hanger bearing assembly for supporting conveyor screws."
+    },
+    {
+        title: "Vibrator",
+        image: "/nmenterpriseimages/products/p-49.png",
+        alt: "Vibrator",
+        description: "Electric motor vibrator to assist with material flow and prevent clogging."
+    },
+    {
+        title: "Addmixer Pump",
+        image: "/nmenterpriseimages/products/p-50.png",
+        alt: "Addmixer Pump",
+        description: "Centrifugal pump designed for concrete additive and admixture transfer."
+    },
+    {
+        title: "Water Control Valve",
+        image: "/nmenterpriseimages/products/p-51.png",
+        alt: "Water Control Valve",
+        description: "Precision regulating valve for accurate water flow control."
+    },
+    {
+        title: "Silo Prv",
+        image: "/nmenterpriseimages/products/p-52.png",
+        alt: "Silo Prv",
+        description: "Pressure relief valve essential for silo safety and pressure regulation."
+    },
+    {
+        title: "Top Dust Collector",
+        image: "/nmenterpriseimages/products/p-53.png",
+        alt: "Top Dust Collector",
+        description: "Top-mounted cylindrical dust collector for silo ventilation."
+    },
+    {
+        title: "Aeration Pad",
+        image: "/nmenterpriseimages/products/p-54.png",
+        alt: "Aeration Pad",
+        description: "Circular aeration pads for promoting smooth powder flow in silos."
+    },
+    {
+        title: "Screw Conveyor Gear",
+        image: "/nmenterpriseimages/products/p-55.png",
+        alt: "Screw Conveyor Gear",
+        description: "Heavy-duty gearbox/reducer for driving screw conveyors."
+    },
+    {
+        title: "Inspection Hatch",
+        image: "/nmenterpriseimages/products/p-56.png",
+        alt: "Inspection Hatch",
+        description: "Metal inspection hatch for safe maintenance access to equipment."
+    },
+    {
+        title: "Silo Filter",
+        image: "/nmenterpriseimages/products/p-57.png",
+        alt: "Silo Filter",
+        description: "Cartridge filter set for efficient dust extraction from silos."
+    },
+    {
+        title: "Butter Fly Valve",
+        image: "/nmenterpriseimages/products/p-58.png",
+        alt: "Butter Fly Valve",
+        description: "Assorted butterfly valves and fittings for industrial flow control."
+    },
+    {
+        title: "Solenoid Valve",
+        image: "/nmenterpriseimages/products/p-59.png",
+        alt: "Solenoid Valve",
+        description: "Pneumatic solenoid valves for automated control systems."
+    },
+    {
+        title: "Fly Ash Hanger Bearing",
+        image: "/nmenterpriseimages/products/p-60.png",
+        alt: "Fly Ash Hanger Bearing",
+        description: "Heavy-duty hanger bearing assembly for fly ash conveyor systems."
+    },
+    {
+        title: "Internal Screw",
+        image: "/nmenterpriseimages/products/p-61.png",
+        alt: "Internal Screw",
+        description: "Replacement internal screw auger for material conveying."
+    },
+    {
+        title: "Sealing Cover",
+        image: "/nmenterpriseimages/products/p-62.png",
+        alt: "Sealing Cover",
+        description: "Protective sealing cover for pump and mixer components."
+    },
+    {
+        title: "Conveyor Belt",
+        image: "/nmenterpriseimages/products/p-63.png",
+        alt: "Conveyor Belt",
+        description: "Chevron patterned conveyor belt for efficient material handling."
+    },
+    {
+        title: "Roller",
+        image: "/nmenterpriseimages/products/p-64.png",
+        alt: "Roller",
+        description: "Set of cylindrical conveyor rollers for belt support."
+    },
+    {
+        title: "Break Liner",
+        image: "/nmenterpriseimages/products/p-65.png",
+        alt: "Break Liner",
+        description: "Wear-resistant break liners for mixer or pump protection."
+    },
+    {
+        title: "Break Coil",
+        image: "/nmenterpriseimages/products/p-66.png",
+        alt: "Break Coil",
+        description: "Replacement break coil assembly for industrial machinery."
+    },
+    {
+        title: "TM Filter",
+        image: "/nmenterpriseimages/products/p-67.png",
+        alt: "TM Filter",
+        description: "Cylindrical TM filter for hydraulic or fluid filtration."
+    },
+    {
+        title: "TM Shute",
+        image: "/nmenterpriseimages/products/p-68.png",
+        alt: "TM Shute",
+        description: "Heavy-duty chute assembly for material discharge."
+    },
+    {
+        title: "TM Control Lever",
+        image: "/nmenterpriseimages/products/p-69.png",
+        alt: "TM Control Lever",
+        description: "Manual control lever for operating TM equipment."
+    },
+    {
+        title: "TM Guide Roller",
+        image: "/nmenterpriseimages/products/p-70.png",
+        alt: "TM Guide Roller",
+        description: "Guide roller assembly for smooth directional movement."
+    },
+    {
+        title: "TM Water Pump",
+        image: "/nmenterpriseimages/products/p-71.png",
+        alt: "TM Water Pump",
+        description: "Centrifugal water pump for fluid transfer applications."
+    },
+    {
+        title: "TM Shute Jack",
+        image: "/nmenterpriseimages/products/p-72.png",
+        alt: "TM Shute Jack",
+        description: "Set of heavy-duty jack screws for chute adjustment."
+    },
+    {
+        title: "Concrete End Hose",
+        image: "/nmenterpriseimages/products/p-73.png",
+        alt: "Concrete End Hose",
+        description: "Durable rubber concrete end hoses with fittings for pump delivery lines."
+    },
+    {
+        title: "Schwing Wear Plate",
+        image: "/nmenterpriseimages/products/p-74.png",
+        alt: "Schwing Wear Plate",
+        description: "Heavy-duty figure-8 wear plate for Schwing concrete pumps."
+    },
+    {
+        title: "Schwing Agitator Bush",
+        image: "/nmenterpriseimages/products/p-75.png",
+        alt: "Schwing Agitator Bush",
+        description: "Brass and plastic agitator bushings for Schwing mixer assemblies."
+    },
+    {
+        title: "Agitator Shaft",
+        image: "/nmenterpriseimages/products/p-76.png",
+        alt: "Agitator Shaft",
+        description: "Replacement metal agitator shafts for concrete mixing systems."
+    },
+    {
+        title: "Plunger Cylinder",
+        image: "/nmenterpriseimages/products/p-77.png",
+        alt: "Plunger Cylinder",
+        description: "Hydraulic plunger cylinders for reliable pump operation."
+    },
+    {
+        title: "Cutting Ring",
+        image: "/nmenterpriseimages/products/p-78.png",
+        alt: "Cutting Ring",
+        description: "Precision cutting ring with a yellow inner seal for concrete pumps."
+    },
+    {
+        title: "45 Degree Bend",
+        image: "/nmenterpriseimages/products/p-79.png",
+        alt: "45 Degree Bend",
+        description: "Cast iron 45-degree pipe bend for concrete delivery pipelines."
+    },
+    {
+        title: "Boom Water Pump",
+        image: "/nmenterpriseimages/products/p-80.png",
+        alt: "Boom Water Pump",
+        description: "High-pressure water pump designed for concrete pump boom systems."
+    },
+    {
+        title: "Agitator Gear Box",
+        image: "/nmenterpriseimages/products/p-81.png",
+        alt: "Agitator Gear Box",
+        description: "Set of green planetary gears for agitator gearbox maintenance."
+    },
+    {
+        title: "S Valve Putz",
+        image: "/nmenterpriseimages/products/p-82.png",
+        alt: "S Valve Putz",
+        description: "Replacement S-valve assembly for Putzmeister concrete pumps."
+    },
+    {
+        title: "Shutoff Valve",
+        image: "/nmenterpriseimages/products/p-83.png",
+        alt: "Shutoff Valve",
+        description: "Heavy-duty red shutoff valve for concrete flow control."
+    },
+    {
+        title: "Greasing System",
+        image: "/nmenterpriseimages/products/p-84.png",
+        alt: "Greasing System",
+        description: "Automatic lubrication system for centralized greasing of machinery."
+    },
+       {
+        title: "Twin layer Bend",
+        image: "/nmenterpriseimages/products/p-85.png",
+        alt: "Twin layer Bend",
+        description: "Heavy-duty twin layer pipe bend for concrete pumping applications."
+    },
+    {
+        title: "Putz Water Pump",
+        image: "/nmenterpriseimages/products/p-86.png",
+        alt: "Putz Water Pump",
+        description: "Replacement water pump assembly for Putzmeister systems."
+    },
+    {
+        title: "Putz Agitator Motor",
+        image: "/nmenterpriseimages/products/p-87.png",
+        alt: "Putz Agitator Motor",
+        description: "Hydraulic agitator motor for Putzmeister concrete mixers."
+    },
+    {
+        title: "Putz Upper Housing",
+        image: "/nmenterpriseimages/products/p-88.png",
+        alt: "Putz Upper Housing",
+        description: "Genuine upper housing component for Putzmeister concrete pumps."
+    },
+    {
+        title: "Ball Passing Pipe",
+        image: "/nmenterpriseimages/products/p-89.png",
+        alt: "Ball Passing Pipe",
+        description: "Yellow ball passing pipe assembly for pipeline cleaning systems."
+    },
+    {
+        title: "Sponge Ball",
+        image: "/nmenterpriseimages/products/p-90.png",
+        alt: "Sponge Ball",
+        description: "Cleaning sponge balls for concrete pipeline maintenance."
+    },
+    {
+        title: "Putz Wear Plate",
+        image: "/nmenterpriseimages/products/p-91.png",
+        alt: "Putz Wear Plate",
+        description: "Wear-resistant figure-8 plate for Putzmeister pumps."
+    },
+    {
+        title: "Seamless Pipe",
+        image: "/nmenterpriseimages/products/p-92.png",
+        alt: "Seamless Pipe",
+        description: "Stack of heavy-duty seamless delivery pipes for concrete."
+    },
+    {
+        title: "Putz Ram",
+        image: "/nmenterpriseimages/products/p-93.png",
+        alt: "Putz Ram",
+        description: "Replacement ram seal and piston assembly for Putzmeister systems."
+    },
+    {
+        title: "Putz Outer Housing",
+        image: "/nmenterpriseimages/products/p-94.png",
+        alt: "Putz Outer Housing",
+        description: "Outer housing component with flange for Putzmeister pumps."
+    },
+    {
+        title: "Sleeving Shaft",
+        image: "/nmenterpriseimages/products/p-95.png",
+        alt: "Sleeving Shaft",
+        description: "Durable sleeving shaft for concrete pump mechanisms."
+    },
+    {
+        title: "Sleeving Lever",
+        image: "/nmenterpriseimages/products/p-96.png",
+        alt: "Sleeving Lever",
+        description: "Replacement metal sleeving lever for pump control."
+    },
+    {
+        title: "Pipe Bands",
+        image: "/nmenterpriseimages/products/p-97.png",
+        alt: "Pipe Bands",
+        description: "Curved pipe bands/bends for concrete pipeline routing."
+    },
+    {
+        title: "Delivery Cylinder",
+        image: "/nmenterpriseimages/products/p-98.png",
+        alt: "Delivery Cylinder",
+        description: "Color-coded concrete delivery cylinders for pump systems."
+    },
+    {
+        title: "Pipe Line Clamp",
+        image: "/nmenterpriseimages/products/p-99.png",
+        alt: "Pipe Line Clamp",
+        description: "Heavy-duty pipeline clamp for secure concrete pipe connections."
     }
+
 
 
 ];
