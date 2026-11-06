@@ -52,7 +52,7 @@ const services = [
 ];
 
 
-const products = [
+const products1 = [
     {
         title: "Load Cell 1000 Kg S Type 2 Mv",
         image: "/nmenterpriseimages/products/s-type-load-cell-1000-kg.jpg",
@@ -408,6 +408,192 @@ const products = [
         description: "General-purpose wearing insert for pump protection."
     }
 ];
+
+const products = [
+    {
+        title: "Schwing M1T Arm",
+        image: "/nmenterpriseimages/products/p-1.png",
+        alt: "Schwing M1T Arm",
+        description: "High-performance mixing arm for Schwing concrete pumps."
+    },
+    {
+        title: "Schwing 2.5 Ladge",
+        image: "/nmenterpriseimages/products/p-2.png",
+        alt: "Schwing 2.5 Ladge",
+        description: "Replacement ladge component for Schwing 2.5 systems."
+    },
+    {
+        title: "Schwing 2.5 Blade",
+        image: "/nmenterpriseimages/products/p-3.png",
+        alt: "Schwing 2.5 Blade",
+        description: "Durable replacement blade for Schwing 2.5 mixers."
+    },
+    {
+        title: "Schwing 2.5 Arm",
+        image: "/nmenterpriseimages/products/p-4.png",
+        alt: "Schwing 2.5 Arm",
+        description: "Heavy-duty mixing arm for Schwing 2.5 equipment."
+    },
+    {
+        title: "Schwing M1T Blade",
+        image: "/nmenterpriseimages/products/p-5.png",
+        alt: "Schwing M1T Blade",
+        description: "Wear-resistant blade for Schwing M1T mixers."
+    },
+    {
+        title: "Schwing Trough Tiles",
+        image: "/nmenterpriseimages/products/p-6.png",
+        alt: "Schwing Trough Tiles",
+        description: "Protective trough tiles for Schwing mixer systems."
+    },
+    {
+        title: "Schwing M1T Seal Kit",
+        image: "/nmenterpriseimages/products/p-7.png",
+        alt: "Schwing M1T Seal Kit",
+        description: "Complete seal kit for Schwing M1T maintenance."
+    },
+    {
+        title: "Schwing Pan Mixer Arm",
+        image: "/nmenterpriseimages/products/p-8.png",
+        alt: "Schwing Pan Mixer Arm",
+        description: "Replacement arm for Schwing pan mixers."
+    },
+    {
+        title: "Bottom Tiles",
+        image: "/nmenterpriseimages/products/p-9.png",
+        alt: "Bottom Tiles",
+        description: "Durable bottom tiles for mixer protection."
+    },
+    {
+        title: "Schwing M1t Arm",
+        image: "/nmenterpriseimages/products/p-10.png",
+        alt: "Schwing M1t Arm",
+        description: "Replacement mixing arm for Schwing M1T mixers."
+    },
+    {
+        title: "Outer Plate CP30",
+        image: "/nmenterpriseimages/products/p-11.png",
+        alt: "Outer Plate CP30",
+        description: "Outer wear plate for CP30 concrete pumps."
+    },
+    {
+        title: "Discharge Cover",
+        image: "/nmenterpriseimages/products/p-12.png",
+        alt: "Discharge Cover",
+        description: "Heavy-duty discharge cover for concrete flow."
+    },
+    {
+        title: "Sicoma Mixing Blade",
+        image: "/nmenterpriseimages/products/p-13.png",
+        alt: "Sicoma Mixing Blade",
+        description: "High-quality mixing blade for Sicoma mixers."
+    },
+    {
+        title: "Sicoma Blades",
+        image: "/nmenterpriseimages/products/p-14.png",
+        alt: "Sicoma Blades",
+        description: "Set of durable blades for Sicoma mixing equipment."
+    },
+    {
+        title: "Sicoma Wear Plate",
+        image: "/nmenterpriseimages/products/p-15.png",
+        alt: "Sicoma Wear Plate",
+        description: "Wear-resistant plate for Sicoma mixer longevity."
+    },
+    {
+        title: "Sicoma Seal Housing",
+        image: "/nmenterpriseimages/products/p-16.png",
+        alt: "Sicoma Seal Housing",
+        description: "Precision seal housing for Sicoma components."
+    },
+    {
+        title: "Sicoma Gear Hub",
+        image: "/nmenterpriseimages/products/p-17.png",
+        alt: "Sicoma Gear Hub",
+        description: "Robust gear hub for Sicoma mixer drives."
+    },
+    {
+        title: "Sicoma Mixer Shaft",
+        image: "/nmenterpriseimages/products/p-18.png",
+        alt: "Sicoma Mixer Shaft",
+        description: "Heavy-duty mixer shaft for Sicoma systems."
+    },
+    {
+        title: "Sicoma Gears",
+        image: "/nmenterpriseimages/products/p-19.png",
+        alt: "Sicoma Gears",
+        description: "Replacement gears for Sicoma mixer transmissions."
+    },
+    {
+        title: "Sicoma Central Arm",
+        image: "/nmenterpriseimages/products/p-20.png",
+        alt: "Sicoma Central Arm",
+        description: "Central mixing arm for Sicoma pan mixers."
+    },
+    {
+        title: "Sicoma Wear Plate",
+        image: "/nmenterpriseimages/products/p-21.png",
+        alt: "Sicoma Wear Plate",
+        description: "Durable wear plate for Sicoma mixers."
+    },
+    {
+        title: "Sicoma Mixer Blade",
+        image: "/nmenterpriseimages/products/p-22.png",
+        alt: "Sicoma Mixer Blade",
+        description: "Replacement mixer blade for Sicoma equipment."
+    },
+    {
+        title: "Sicoma Wear Plate",
+        image: "/nmenterpriseimages/products/p-23.png",
+        alt: "Sicoma Wear Plate",
+        description: "High-wear resistant plate for Sicoma mixers."
+    },
+    {
+        title: "Sicoma Seal Kit",
+        image: "/nmenterpriseimages/products/p-24.png",
+        alt: "Sicoma Seal Kit",
+        description: "Comprehensive seal kit for Sicoma maintenance."
+    },
+    {
+        title: "Conmat Side Tiles",
+        image: "/nmenterpriseimages/products/p-25.png",
+        alt: "Conmat Side Tiles",
+        description: "Protective side tiles for Conmat mixer systems."
+    },
+      {
+        "title": "Conmat Gate Tiles",
+        "image": "/nmenterpriseimages/products/p-26.png",
+        "alt": "Conmat Gate Tiles",
+        "description": "Durable gate tiles for Conmat mixer systems."
+    },
+    {
+        "title": "Conmat Body Tiles",
+        "image": "/nmenterpriseimages/products/p-27.png",
+        "alt": "Conmat Body Tiles",
+        "description": "Wear-resistant body tiles for Conmat equipment."
+    },
+    {
+        "title": "Conmat Mixer Shaft",
+        "image": "/nmenterpriseimages/products/p-28.png",
+        "alt": "Conmat Mixer Shaft",
+        "description": "Heavy-duty mixer shaft for Conmat systems."
+    },
+    {
+        "title": "Conmat Arm",
+        "image": "/nmenterpriseimages/products/p-29.png",
+        "alt": "Conmat Arm",
+        "description": "Replacement mixing arm for Conmat mixers."
+    },
+    {
+        "title": "Conmat Seal Kit",
+        "image": "/nmenterpriseimages/products/p-30.png",
+        "alt": "Conmat Seal Kit",
+        "description": "Comprehensive seal kit for Conmat maintenance."
+    }
+
+
+];
+
 
 const counters = [
     {

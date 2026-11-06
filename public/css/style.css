@@ -34034,7 +34034,7 @@ edit .quantity-edit button {
 }
 
 .blog-card-style-two .blog-content-area-2 {
-  padding: 20px 30px 30px;
+  padding: 20px 30px ;
 }
 
 @media only screen and (max-width: 991px) {
@@ -56616,7 +56616,7 @@ ul.mega-menu-item.parent-nav {
 }
 
 .blog-card-style-two .blog-title {
-  min-height: 60px;
+  min-height: 40px;
   margin-bottom: 1px;
 }
 
